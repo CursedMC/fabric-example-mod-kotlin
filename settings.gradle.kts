@@ -7,4 +7,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "TaterQuest"
+rootProject.name = "Example"

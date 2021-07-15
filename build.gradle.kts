@@ -33,9 +33,12 @@ repositories {
         url = uri("https://maven.shedaniel.me/")
     }
 
-    maven {
-        name = "TerraformersMC"
-        url = uri("https://maven.terraformersmc.com/")
+    // hacky fix until terraformers mc maven gets fixed
+    if (System.getenv("GITHUB_ACTIONS") == null) {
+        maven {
+            name = "TerraformersMC"
+            url = uri("https://maven.terraformersmc.com/")
+        }
     }
 
     maven {
